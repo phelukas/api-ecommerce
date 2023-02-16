@@ -55,6 +55,7 @@ class User(AbstractUser):
         return self.email
 
     def get_full_name(self):
+        """Nome complete do usuario"""
         return f'{self.first_name} {self.last_name}'
 
     objects = UsuarioManager()
